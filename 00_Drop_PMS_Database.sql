@@ -1,6 +1,13 @@
 USE [master]
 GO
 
+IF  EXISTS (SELECT * FROM sys.database_principals WHERE name = N'username')
+DROP USER [username]
+GO
+
+DROP LOGIN PMS;
+GO
+
 SELECT DB_ID(N'PMS') AS [Database ID];  
 GO 
 -- if PMS exists already delete it

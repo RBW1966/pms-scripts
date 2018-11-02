@@ -159,7 +159,17 @@ where physical_name like N'%PMS_dat.mdf' or
 physical_name like N'%PMS_log.ldf';
 go
 
-use [PMS]
+CREATE LOGIN PMS WITH PASSWORD = 'newpassword'
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = N'PMS')
+BEGIN
+    CREATE USER [PMS] FOR LOGIN [PMS]
+    EXEC sp_addrolemember N'db_owner', N'PMS'
+END;
+GO
+
+use PMS
 GO
 
 set nocount on

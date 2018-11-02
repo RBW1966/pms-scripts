@@ -3,18 +3,6 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="ROB-MOAC:PMS">
-          <Created>2016-07-28T20:16:34.9130583-07:00</Created>
-          <Type>SQL</Type>
-          <Server>ROB-MOAC</Server>
-          <UserName>PMS</UserName>
-          <Authentication>SQL</Authentication>
-          <InitialDB />
-          <LoginTimeout>15</LoginTimeout>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName />
-        </ConnectionNode>
         <ConnectionNode Name="robweed-sql.ct7asgiwab20.us-west-1.rds.amazonaws.com,1433:robweed">
           <Created>2018-11-01T21:13:31.4564035-07:00</Created>
           <Type>SQL</Type>
@@ -66,12 +54,6 @@
           <AssociatedConnSrvName>robweed-sql.ct7asgiwab20.us-west-1.rds.amazonaws.com,1433</AssociatedConnSrvName>
           <AssociatedConnUserName>robweed</AssociatedConnUserName>
           <FullPath>05_Populate_PMS_Database.sql</FullPath>
-        </FileNode>
-        <FileNode Name="TEMP.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:robweed-sql.ct7asgiwab20.us-west-1.rds.amazonaws.com,1433:False:robweed</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>robweed-sql.ct7asgiwab20.us-west-1.rds.amazonaws.com,1433</AssociatedConnSrvName>
-          <AssociatedConnUserName>robweed</AssociatedConnUserName>
-          <FullPath>TEMP.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
