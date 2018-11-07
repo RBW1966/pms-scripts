@@ -1,8 +1,8 @@
 USE [master]
 GO
 
-IF  EXISTS (SELECT * FROM sys.database_principals WHERE name = N'username')
-DROP USER [username]
+IF  EXISTS (SELECT * FROM sys.database_principals WHERE name = N'PMS')
+DROP USER [PMS]
 GO
 
 DROP LOGIN PMS;
